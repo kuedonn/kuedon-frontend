@@ -8,7 +8,7 @@ let table = document.querySelector('.table');
 let count = 0;
 
 button.addEventListener('click', function(){
-    fetch("https://api.openweathermap.org/data/2.5/forecast?q="+inputValue.value+"&appid=3915b57a37556d0743125578a4b6aaa8&units=metric")
+    fetch("https://api.openweathermap.org/data/2.5/forecast?q="+inputValue.value+"&appid=APPID&units=metric") //appid missing for private reasons
     .then(response => response.json())
     .then(data => {
         console.log(data)
