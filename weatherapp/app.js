@@ -6,7 +6,8 @@ let time = document.querySelector('.time');
 let humidity = document.querySelector('.humidity');
 
 button.addEventListener('click', function(){ //on submit click from user
-    fetch("https://api.openweathermap.org/data/2.5/weather?q="+inputValue.value+"&appid=3915b57a37556d0743125578a4b6aaa8&units=metric") //fetching data from the openweathermap api
+    fetch("https://api.openweathermap.org/data/2.5/weather?q="+inputValue.value+"&appid=APPID&units=metric") //fetching data from the openweathermap api
+                                                                                                             //appid missing for private reasons
     .then(response => response.json()) // getting data from api as json
     .then(data => {
         console.log(data) //logging data in the console to find errors on my code
